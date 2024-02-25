@@ -5,6 +5,7 @@ const FirstSection = styled.div`
  font-family:Josefin Sans;
  padding:0% 7%;
  margin:0 auto;
+ position:relative;
 
  height:100vh;
  display:flex;
@@ -71,6 +72,18 @@ const FirstSection = styled.div`
   color:white;
   font-size:110%;
   border-radius:30px;
+ }
+ .imgContainer{
+  width:38%;
+  height:100%;
+  position:absolute;
+  right:0;
+top:15%;
+  
+ }
+ .imgContainer .img{
+  width:100%;
+  height:auto;
  }
 
 `;

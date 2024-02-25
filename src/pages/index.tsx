@@ -2,7 +2,8 @@ import { FirstSection,
           SecondSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Link from 'next/link';
-import bro from "../assets/img/codingBro.png"
+import bro from "../assets/img/codingBro.png";
+import brain from "../assets/img/brain.png";
 import Image from 'next/image';
 
 const styles: React.CSSProperties = {
@@ -34,7 +35,9 @@ export default function Home() {
         <Link href="/contact">Contact Us</Link>
         </section>
       </div>
-    
+      <div className="imgContainer">
+      <Image src={brain} alt="brain" className="img" />
+      </div>
     </FirstSection>
 
     <SecondSection>
