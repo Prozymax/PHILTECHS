@@ -5,7 +5,8 @@ width: 100%;
 position: fixed;
 top:0;
 left:0;
-
+z-index:5;
+background-color:white;
 font-Family:Nunito;
 height: fit-content;
 padding: 0 auto;

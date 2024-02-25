@@ -1,9 +1,12 @@
-import { FirstSection } from '../styles/Home.styled'
+import { FirstSection, 
+          SecondSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Link from 'next/link';
+import bro from "../assets/img/codingBro.png"
+import Image from 'next/image';
 
 const styles: React.CSSProperties = {
-  paddingTop:50 // Example margin value
+  paddingTop:8 // Example margin value
  };
 export default function Home() {
   return (
@@ -33,6 +36,29 @@ export default function Home() {
       </div>
     
     </FirstSection>
+
+    <SecondSection>
+      <div className='firstDiv'>
+      <Image src={bro} alt="brain" className="img" />
+      </div>
+      <div className='secondDiv'>
+        <span>WHY CHOOSE US</span>
+        <h2>We Impact  the Passion For Digital Skills</h2>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae, nemo nulla non ducimus exercitationem facere placeat delectus, eligendi consectetur omnis sint quae minus veniam dicta asperiores vero explicabo totam?
+        </article>
+        <section>
+          <ul>
+            <li><i class="fa-brands fa-think-peaks"></i>Web Developement</li>
+            <li><i class="fa-brands fa-think-peaks"></i>Graphics Design</li>
+            <li><i class="fa-brands fa-think-peaks"></i>UI/UX Design</li>
+            <li><i class="fa-brands fa-think-peaks"></i>Content Writing</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </SecondSection>
     </div>
   );
 }
