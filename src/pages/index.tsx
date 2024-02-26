@@ -1,14 +1,30 @@
-import { FirstSection, 
-          SecondSection } from '../styles/Home.styled'
+import { Span, FirstSection, 
+          SecondSection, ThirdSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Link from 'next/link';
 import bro from "../assets/img/codingBro.png";
 import brain from "../assets/img/brain.png";
 import Image from 'next/image';
 
+
+interface ListItem {
+  content: string;
+  iconClass: string;
+}
+
 const styles: React.CSSProperties = {
   paddingTop:8 // Example margin value
  };
+ 
+ const listItem: ListItem = {
+  content: "",
+  iconClass: "fa-brands fa-think-peaks"
+};
+const IconList: ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-code"
+}
+
 export default function Home() {
   return (
     <div style={styles}>
@@ -45,23 +61,92 @@ export default function Home() {
       <Image src={bro} alt="brain" className="img" />
       </div>
       <div className='secondDiv'>
-        <span>WHY CHOOSE US</span>
+        <Span>WHY CHOOSE US</Span>
         <h2>We Impact  the Passion For Digital Skills</h2>
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae, nemo nulla non ducimus exercitationem facere placeat delectus, eligendi consectetur omnis sint quae minus veniam dicta asperiores vero explicabo totam?
         </article>
         <section>
           <ul>
-            <li><i class="fa-brands fa-think-peaks"></i>Web Developement</li>
-            <li><i class="fa-brands fa-think-peaks"></i>Graphics Design</li>
-            <li><i class="fa-brands fa-think-peaks"></i>UI/UX Design</li>
-            <li><i class="fa-brands fa-think-peaks"></i>Content Writing</li>
+            <li><i className={`fa-brands ${listItem.iconClass}`}></i>Web Developement</li>
+            <li><i className={`fa-brands ${listItem.iconClass}`}></i>Graphics Design</li>
+            <li><i className={`fa-brands ${listItem.iconClass}`}></i>UI/UX Design</li>
+            <li><i className={`fa-brands ${listItem.iconClass}`}></i>Content Writing</li>
           </ul>
         </section>
 
       </div>
 
     </SecondSection>
+
+
+    <ThirdSection>
+        <div className='firstDiv'>
+        <Span>COURSES</Span>
+        <h1>Feel The Desire For a Digital Skill.</h1>
+        </div>
+        <div className="secondDiv">
+
+          <div className='grid'>
+            <div className='counterGrid'>
+            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <h2>Web Developement</h2>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
+              </article>
+            <Link href="/">Read More</Link>
+
+            </div>
+          </div>
+
+
+          <div className='grid'>
+            <div className='counterGrid'>
+            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <h2>Graphics Design</h2>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio 
+            </article>
+            <Link href="/">Read More</Link>
+
+            </div>
+          </div>
+
+
+
+
+          <div className='grid'>
+            <div className='counterGrid'>
+            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <h2>UI/UX Design</h2>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
+              
+            </article>
+            <Link href="/">Read More </Link>
+
+            </div>
+          </div>
+
+
+
+
+
+          <div className='grid'>
+            <div className='counterGrid'>
+            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <h2>Content Writing</h2>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
+            </article>
+            <Link href="/">Read More </Link>
+
+            </div>
+          </div>
+
+        </div>
+
+    </ThirdSection>
     </div>
   );
 }
