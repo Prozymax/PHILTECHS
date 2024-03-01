@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 
+
+
 const Span = styled.span`
  font-size:150%;
  margin:0;
@@ -174,7 +176,7 @@ const SecondSection = styled.div`
 `;
 const ThirdSection = styled.div`
  width:85%;
- height:90vh;
+ height:120vh;
  margin:0 auto;
  padding:0% 7%;
  display:flex;
@@ -213,17 +215,19 @@ const ThirdSection = styled.div`
  }
  .secondDiv .grid{
   width:20%;
-  height:68%;
+  height:55%;
   display:flex;
   // background-color:purple;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   gap:10px;
-  padding:15px;
+  padding:0px 20px;
+  position:relative;
   border-radius: 30px;
   transform: skewY(-7deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  z-index:2;
   
  }
 
@@ -236,11 +240,14 @@ const ThirdSection = styled.div`
   align-items:center;
   justify-content:center;
   gap:5px;
+
  }
- .grid .counterGrid i{
+ .counterGrid  i{
   font-size:300%;
   color:purple;
+  z-index:5;
  }
+
  .grid .counterGrid article{
   width:100%;
   text-align:center;
@@ -252,13 +259,110 @@ const ThirdSection = styled.div`
   color:inherit;
  }
  .grid:hover{
-  background-color:purple;
-  transition:1.5s;
+  // background-color:purple;
+  transition:0.5s;
   color:white;
  }
  
+ .grid::before {
+  content: '';
+  position: absolute;
+  transform: skewY(-7deg);
+  transform: rotateY(-9deg);
+  width:0;
+  height: 0;
+  border-radius: 30px;
+  top:0;
+  background-color: purple;
+  transition: width 0.5s, height 0.5s; 
+  z-index: -3;
+}
+
+.grid:hover::before {
+  height: 100%; 
+  width: 100%;
+}
+
+.grid:not(:hover)::before {
+  height: 0; /* Reverse animation for height */
+  width: 0; /* Reverse animation for width */
+}
+`;
+const FourthSection =styled.div`
+width:90%;
+height:90vh;
+margin:0 auto;
+padding:0% 5%;
+display:flex;
+align-items:center;
+font-family:Josefin Sans;
+justify-content:space-evenly;
+
+.firstDiv{
+ width:50%;
+ height:90%;
+ padding:10px;
+ margin:0;
+}
+.firstDiv .list{
+ width:100%;
+ height:100%;
+ justify-content:center;
+ display:flex;
+ align-items:center;
+ flex-direction:column;
+}
+.firstDiv .list .listItem{
+ width:100%;
+ height:fit-content;
+}
+
+.firstDiv article {
+ height: 0;
+ overflow: hidden;
+ margin:0px;
+ border:none;
+ padding:0px;
+ font-size:130%;
+ transition: height 0.3s ease;
+}
+.firstDiv .list .listItem h2{
+ height:fit-content;
+ margin:0;
+ cursor:pointer;
+ padding-block:30px;
+ display:flex;
+ align-items:center;
+ justify-content:flex-start;
+ border-bottom:solid 0.1px purple;
+}
+
+
+.secondDiv{
+ width:50%;
+ height:fit-content;
+ padding:10px;
+ margin:0px 0px 0px 5%;
+}
+.secondDiv .caption{
+  width:100%;
+  height:fit-content;
+ margin-bottom:30px;
+}
+.secondDiv .caption{
+ font-size:150%;
+}
+.secondDiv .imgContainer{
+ width:100%;
+ height:auto;
+}
+.secondDiv .imgContainer .img{
+ width:100%;
+ height:100%;
+ border-radius:30px;
+}
 
 
 
 `;
-export  { Span, FirstSection, SecondSection, ThirdSection } ;
+export  { Span, FirstSection, SecondSection, ThirdSection, FourthSection } ;

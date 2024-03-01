@@ -1,10 +1,16 @@
 import { Span, FirstSection, 
-          SecondSection, ThirdSection } from '../styles/Home.styled'
+          SecondSection, ThirdSection, FourthSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Link from 'next/link';
 import bro from "../assets/img/codingBro.png";
 import brain from "../assets/img/brain.png";
 import Image from 'next/image';
+import { useEffect } from 'react';
+import faq from '../assets/img/faq.png'
+import { testFunc } from '../styles/Functions';
+
+
+
 
 
 interface ListItem {
@@ -13,8 +19,10 @@ interface ListItem {
 }
 
 const styles: React.CSSProperties = {
-  paddingTop:8 // Example margin value
- };
+  paddingTop: 8, // Example margin value
+  userSelect: "none"
+};
+
  
  const listItem: ListItem = {
   content: "",
@@ -24,8 +32,56 @@ const IconList: ListItem ={
   content:"",
   iconClass:"fa-solid fa-code"
 }
+const IconList2: ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-pen-nib",
+}
+const IconList3:ListItem ={
+  content:"",
+  iconClass:"fa-brands fa-uikit",
+}
+const IconList4:ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-signature",
+}
+
 
 export default function Home() {
+  useEffect(() => {
+    // Select all elements with the class 'grid' and the id 'target'
+    const grids = document.querySelectorAll('.grid');
+    const targets = document.querySelectorAll('#target');
+   
+    // Loop through each grid element
+    grids.forEach((grid, index) => {
+      // Check if there is a corresponding target element for the current grid element
+      const target = targets[index] as HTMLElement | undefined;
+      
+      if (target) {
+        // Define event handlers for mouse enter and mouse leave events
+        const handleMouseEnter = () => {
+          target.style.color = 'white';
+        };
+  
+        const handleMouseLeave = () => {
+          target.style.color = 'purple';
+        };
+  
+        // Add event listeners to the current grid element
+        grid.addEventListener('mouseenter', handleMouseEnter);
+        grid.addEventListener('mouseleave', handleMouseLeave);
+  
+        // Clean up event listeners when component unmounts
+        return () => {
+          grid.removeEventListener('mouseenter', handleMouseEnter);
+          grid.removeEventListener('mouseleave', handleMouseLeave);
+        };
+      }
+    });
+  }, []);
+  
+
+
   return (
     <div style={styles}>
     <Header />
@@ -89,7 +145,7 @@ export default function Home() {
 
           <div className='grid'>
             <div className='counterGrid'>
-            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <i className={`fa-solid ${IconList.iconClass}`} id='target'></i>
             <h2>Web Developement</h2>
             <article>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
@@ -102,7 +158,7 @@ export default function Home() {
 
           <div className='grid'>
             <div className='counterGrid'>
-            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <i className={`fa-solid ${IconList2.iconClass}`} id='target'></i>
             <h2>Graphics Design</h2>
             <article>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio 
@@ -117,7 +173,7 @@ export default function Home() {
 
           <div className='grid'>
             <div className='counterGrid'>
-            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <i className={`fa-brands ${IconList3.iconClass}`} id='target'></i>
             <h2>UI/UX Design</h2>
             <article>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
@@ -134,7 +190,7 @@ export default function Home() {
 
           <div className='grid'>
             <div className='counterGrid'>
-            <i className={`fa-solid ${IconList.iconClass}`}></i>
+            <i className={`fa-solid ${IconList4.iconClass}`} id='target'></i>
             <h2>Content Writing</h2>
             <article>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, in cum impedit distinctio
@@ -147,6 +203,64 @@ export default function Home() {
         </div>
 
     </ThirdSection>
+    <FourthSection>
+      <div className="firstDiv">
+        <div className="list">
+          <div className="listItem">
+          <h2 className='listHead' onClick={testFunc}>Why Do I need a  Digital Skill?</h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+
+            <div className="listItem">
+            <h2 className='listHead' onClick={testFunc}>What are some examples of digital skills ? </h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+          </div>
+    
+          <div className="listItem">
+            <h2 className='listHead' onClick={testFunc}>Do I need prior experience to learn digital skills ?</h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+          </div>
+
+          <div className="listItem">
+            <h2 className='listHead' onClick={testFunc}>How long does it take to learn digital skills ?</h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+          </div>
+
+            <div className="listItem">
+            <h2 className='listHead' onClick={testFunc}>Are there any specific digital skills in high demand ?</h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+          </div>
+
+          <div className="listItem">
+            <h2 className='listHead' onClick={testFunc}>Are digital skills only relevant for certain industries ?</h2>
+            <article className='listTarget'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente odit vitae itaque soluta ea id aliquid tempore impedit magni, commodi iure voluptatibus. Rem, magnam. Eius aliquam aspernatur similique nisi.
+            </article>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="secondDiv">
+        <div className="caption">
+          <Span onClick={testFunc}>F.A.Q.</Span>
+          <h2>Most Trending and Popular Question</h2>
+        </div>
+        <div className="imgContainer">
+        <Image src={faq} alt="faq" className="img" />
+        </div>
+      </div>
+    </FourthSection>
     </div>
   );
 }
