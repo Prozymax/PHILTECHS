@@ -1,9 +1,11 @@
 import { Span, FirstSection, 
-          SecondSection, ThirdSection, FourthSection } from '../styles/Home.styled'
+          SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import Link from 'next/link';
 import bro from "../assets/img/codingBro.png";
 import brain from "../assets/img/brain.png";
+import portrait from "../assets/img/manPortrait.jpg";
 import Image from 'next/image';
 import { useEffect } from 'react';
 import faq from '../assets/img/faq.png'
@@ -19,8 +21,9 @@ interface ListItem {
 }
 
 const styles: React.CSSProperties = {
-  paddingTop: 8, // Example margin value
-  userSelect: "none"
+  padding: "8px 0% 0% 0%" , // Example margin value
+  userSelect: "none",
+  margin:"0px 0px 0px -20px"
 };
 
  
@@ -43,6 +46,18 @@ const IconList3:ListItem ={
 const IconList4:ListItem ={
   content:"",
   iconClass:"fa-solid fa-signature",
+}
+const IconList5:ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-quote-left",
+}
+const IconList6:ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-arrow-right",
+}
+const IconList7:ListItem ={
+  content:"",
+  iconClass:"fa-solid fa-arrow-left",
 }
 
 
@@ -261,6 +276,78 @@ export default function Home() {
         </div>
       </div>
     </FourthSection>
+    <FifthSection>
+       <div className="firstDiv">
+        <Span>TESTIMONIALS.</Span>
+        <h1>Some Words From our Happy Students.</h1>
+       </div>
+       
+       <div className="secondDiv">
+  
+          <div className="rollerItem">
+            <section>
+            <i className={`fa-solid ${IconList5.iconClass}`} id='target'></i>
+              <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquid quasi quas deleniti, libero, non repellendus est ab dolore assumenda totam at saepe. Enim, dicta ipsa tempora distinctio quasi eius.
+              </article>
+            </section>
+            <section>
+              <figure>
+              <Image src={portrait} alt="" />
+              </figure>
+              <article>
+                <h3>Favour Amaechi</h3>
+                <h4>Content Writer.</h4>
+              </article>
+            </section>
+          </div>
+
+
+          <div className="rollerItem">
+            <section>
+            <i className={`fa-solid ${IconList5.iconClass}`} id='target'></i>
+              <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquid quasi quas deleniti, libero, non repellendus est ab dolore assumenda totam at saepe. Enim, dicta ipsa tempora distinctio quasi eius.
+              </article>
+            </section>
+            <section>
+              <figure>
+              <Image src={portrait} alt="" />
+              </figure>
+              <article>
+                <h3>Daniel anozie</h3>
+                <h4>web Developer.</h4>
+              </article>
+            </section>
+          </div>
+
+
+          <div className="rollerItem">
+            <section>
+            <i className={`fa-solid ${IconList5.iconClass}`} id='target'></i>
+              <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquid quasi quas deleniti, libero, non repellendus est ab dolore assumenda totam at saepe. Enim, dicta ipsa tempora distinctio quasi eius.
+              </article>
+            </section>
+            <section>
+              <figure>
+              <Image src={portrait} alt=""  />
+              </figure>
+              <article>
+                <h3>Onyebuhi Charlse</h3>
+                <h4>UI/UX Designer.</h4>
+              </article>
+            </section>
+          </div>
+
+       </div>
+       <div className="thirdDiv">
+        <p><i className={`fa-solid ${IconList7.iconClass}`} id='target'></i></p>
+        <p><i className={`fa-solid ${IconList6.iconClass}`} id='target'></i></p>
+       </div>
+
+    </FifthSection>
+    <Footer />
     </div>
   );
 }
