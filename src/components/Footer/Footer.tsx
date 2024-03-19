@@ -14,7 +14,15 @@ interface socialIcons {
 
 const whatsapp:socialIcons ={
  content:"",
- iconClass:"fa-solid fa-code"
+ iconClass:"fa-brands fa-whatsapp"
+}
+const tiktok:socialIcons ={
+  content:"",
+  iconClass:"fa-brands fa-tiktok"
+}
+const instagram:socilaIcons ={
+  content:"",
+  iconClass:"fa-brands fa-instagram"
 }
 
 
@@ -28,6 +36,7 @@ const Footer: React.FC = () =>{
       <div className="firstDiv">
          <section className="getInTouch">
           <FooterHeading>GET IN TOUCH</FooterHeading>
+          <p>Omuwei, Igrwuta Port Harcourt Rivers State </p>
          <Link href="/">philltech@gmail.com</Link>
          <Link href="/">+234-812-223-066</Link>
          </section>
@@ -43,21 +52,30 @@ const Footer: React.FC = () =>{
       <div className="secondDiv">
         <section className="followUs">
          <FooterHeading>FOLLOW US</FooterHeading>
-        <p><i className={`fa-solid ${whatsapp.iconClass}`} id='target'></i></p>
-        <p><i className={`fa-solid ${whatsapp.iconClass}`} id='target'></i></p>
+         <nav>
+
+         <Link href="/"><i className={`fa-solid ${whatsapp.iconClass}`}  /></Link>
+        <Link href="/"><i className={`fa-solid ${tiktok.iconClass}`}  /></Link>
+        <Link href="/"><i className={`fa-solid ${instagram.iconClass}`}  /></Link>
+         </nav>
+      
         </section>
         <section className="subscribe">
          <FooterHeading>MORE ENQUIRIES</FooterHeading>
-         <input type="button" placeholder="Email Address" />
+         <nav>
+
+         <input type="email" placeholder="Email Address" />
          <Link href="/"> Enroll Now.</Link>
+
+         </nav>
 
         </section>
       </div>
     </div>
               <section className="terms">
-                <p>Copyright 2024 Phill
+                <p>Copyright 2024 Phil
                   <span>Tech</span>
-                   | All Rights Reserved</p>
+                      |   All Rights Reserved</p>
               </section>
   </Main>
 
