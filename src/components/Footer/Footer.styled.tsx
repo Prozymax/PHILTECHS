@@ -10,10 +10,13 @@ const Main = styled.div`
  align-items:center;
  justify-content:center;
  font-Family:Nunito;
- background: linear-gradient(to right, rgba(255, 255, 255, 0.5),  rgba(128, 0, 128, 0.2));
+ background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
+ ,  rgba(128, 0, 128, 0.2));
 
  a{
   text-decoration:none;
+  color:purple;
+
  }
 
  .mainSection{
@@ -26,8 +29,9 @@ const Main = styled.div`
  align-items:center;
  justify-content:center;
  flex-direction:column;
- background-color:white;
+ background-color:#F5F5F5;
  padding-left:200px;
+ box-shadow:0px 0px 15px  rgba(128, 0, 128, 0.2);
  }
 .mainSection .firstDiv{
  width:95%;
@@ -123,7 +127,7 @@ const Main = styled.div`
 }
 .mainSection .secondDiv .subscribe nav input{
   height:40px;
-  width:70%;
+  width:60%;
   background-color:whitesmoke;
   border:none;
   font-size:90%;
@@ -137,10 +141,63 @@ const Main = styled.div`
   font-weight:500;
   font-size:120%;
 }
+@media screen and (max-width:900px){
+  flex-direction:column;
+  width:100%;
+  height:fit-content;
+  padding:0 auto;
+  padding-inline:7%;
+  margin:0 auto;
+ 
+    
+  .mainSection{
+    align-items:flex-start;
+    justify-content:flex-start;
+    height:fit-content;
+    width:100%;
+    margin:0 auto;
+    gap:30px;
+    padding:30px 0px 30px 10px ;
+  }
+  .mainSection .firstDiv{
+    flex-direction:column;
+    margin:0 auto;
+    width:90%;
+    height:fit-content;
+    align-items:flex-start;
+    height:fit-content;
+    gap:30px;
+  }
+  .mainSection .secondDiv{
+    flex-direction:column;
+     height:fit-content;
+    margin:0 auto;
+    width:90%;
+    padding:0 auto;
+    align-items:flex-start;
+    gap:30px;
+  }
+
+  .mainSection section{
+    width:100%;
+    align-items:flex-start;
+    height:fit-content;
+}
+.mainSection .secondDiv .subscribe{
+  width:100%;
+}
+.mainSection .secondDiv .followUs nav{
+  margin-top:10px;
+}
+
+}
 `;
 const FooterHeading = styled.h2`
   color:purple;
-  
+  @media screen and (max-width:900px){
+   
+    margin-bottom:5px;
+  }  
 `;
 
 export {Main, FooterHeading}

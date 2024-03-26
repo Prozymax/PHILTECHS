@@ -10,6 +10,8 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import faq from '../assets/img/faq.png'
 import { testFunc } from '../styles/Functions';
+import '../../public/favicon.ico'
+
 
 
 
@@ -276,6 +278,8 @@ export default function Home() {
         </div>
       </div>
     </FourthSection>
+
+
     <FifthSection>
        <div className="firstDiv">
         <Span>TESTIMONIALS.</Span>

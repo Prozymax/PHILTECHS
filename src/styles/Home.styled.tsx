@@ -20,7 +20,7 @@ const FirstSection = styled.div`
  padding:0% 7%;
  margin:0 auto;
  position:relative;
-
+background-color:#F5F5F5;
  height:100vh;
  display:flex;
  flex-direction:column;
@@ -100,7 +100,25 @@ top:15%;
   width:100%;
   height:auto;
  }
+ @media screen and (max-width: 900px) {
+  width:100%;
+  padding-inline:7%;
 
+
+  .firstDiv{
+    width:100%;  
+  }
+  .firstDiv h1{
+    font-size:230%;
+  }
+  .secondDiv{
+    width:100%;
+  }
+  .imgContainer{
+    display:none;
+  }
+
+ }
 `;
 const SecondSection = styled.div`
  width:100%;
@@ -111,6 +129,7 @@ const SecondSection = styled.div`
  align-items:center;
  font-family:Josefin Sans;
  justify-content:space-evenly;
+ background-color:#F5F5F5;
 
  .firstDiv{
   width:50%;
@@ -173,6 +192,40 @@ const SecondSection = styled.div`
   color:purple;
   font-weight:bold;
  }
+
+ @media screen and (max-width: 900px) {
+     flex-direction:column-reverse;
+     height:fit-content;
+     margin:0 auto;
+     width:100%;
+     padding:20px;
+     padding-inline:7%;
+     gap:30px;
+     padding-block:50px;
+
+
+     .firstDiv{
+      width:100%;
+      margin:0 auto;
+      padding:10px;
+      gap:20px;
+     }
+     .secondDiv{
+      width:100%;
+      margin:0 auto;
+      padding:10px;
+     }
+     .secondDiv section ul{
+      width:100%;
+      margin:0 auto;
+      padding:20px 0px 20px 0px ;
+      
+     }
+     .secondDiv h2{
+      font-size:230%;
+      line-height:120%;
+     }
+ }
 `;
 const ThirdSection = styled.div`
  width:85%;
@@ -184,6 +237,7 @@ const ThirdSection = styled.div`
  flex-direction:column;
  align-items:flex-start;
  justify-content:center;
+ background-color:#F5F5F5;
 
  .firstDiv{
   width:40%;
@@ -287,6 +341,33 @@ const ThirdSection = styled.div`
   height: 0; /* Reverse animation for height */
   width: 0; /* Reverse animation for width */
 }
+
+@media screen and (max-width: 900px) {
+    height:fit-content;
+    width:100%;
+    padding-inline:7%;
+
+  .firstDiv{
+    width:100%;
+  }
+  .firstDiv h1{
+    font-size:250%;
+    line-height:120%;
+  }
+  .secondDiv{
+    height:fit-content;
+    flex-direction:column;
+    padding-block:50px;
+    gap:50px;
+  }
+  .secondDiv .grid{
+    max-width:400px;
+    width:80%;
+    max-height:400px;
+    height:300px;
+    padding-block:50px;
+  }
+}
 `;
 const FourthSection =styled.div`
 width:90%;
@@ -297,7 +378,8 @@ display:flex;
 align-items:center;
 font-family:Josefin Sans;
 justify-content:space-evenly;
-background: linear-gradient(to right, rgba(255, 255, 255, 0.5),  rgba(128, 0, 128, 0.2));
+background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
+,  rgba(128, 0, 128, 0.2));
 
 .firstDiv{
  width:50%;
@@ -366,6 +448,25 @@ background: linear-gradient(to right, rgba(255, 255, 255, 0.5),  rgba(128, 0, 12
  height:100%;
  border-radius:30px;
 }
+@media screen and (max-width:900px){
+  flex-direction:column-reverse;
+  height:fit-content;
+  width:100%;
+  margin:0 auto;
+  padding-block:50px;
+  padding-inline:7%;
+
+  .firstDiv{
+    width:100%;
+  }
+  .secondDiv{
+    width:100%;
+  }
+  .secondDiv .caption{
+    font-size:170%;
+   }
+}
+
 `;
 
 const FifthSection =styled.div`
@@ -378,7 +479,8 @@ flex-direction:column;
 align-items:center;
 font-family:Josefin Sans;
 justify-content:center;
-background: linear-gradient(to right, rgba(255, 255, 255, 0.5),  rgba(128, 0, 128, 0.2));
+background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
+,  rgba(128, 0, 128, 0.2));
 
 
 .firstDiv{
@@ -498,6 +600,26 @@ justify-content:space-evenly;
   font-weight:bold;
 }
 
+@media screen and (max-width:900px){
+  height:fit-content;
+  margin:0 auto;
+  width:100%;
+  padding-inline:7%;
 
+  .secondDiv{
+    flex-direction:column;
+    gap:50px;
+  }
+  .secondDiv .rollerItem{
+    width:90%;
+    margin-block:20px;
+    height:auto;
+  }
+  .firstDiv h1{
+    font-size:250%;
+    line-height:110%;
+  }
+
+}
 `;
 export  { Span, FirstSection, SecondSection, ThirdSection, FourthSection, FifthSection } ;

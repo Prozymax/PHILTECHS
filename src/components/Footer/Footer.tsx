@@ -20,9 +20,13 @@ const tiktok:socialIcons ={
   content:"",
   iconClass:"fa-brands fa-tiktok"
 }
-const instagram:socilaIcons ={
+const instagram:socialIcons ={
   content:"",
   iconClass:"fa-brands fa-instagram"
+}
+const discord:socialIcons ={
+  content:"",
+  iconClass:"fa-brands fa-discord"
 }
 
 
@@ -37,8 +41,8 @@ const Footer: React.FC = () =>{
          <section className="getInTouch">
           <FooterHeading>GET IN TOUCH</FooterHeading>
           <p>Omuwei, Igrwuta Port Harcourt Rivers State </p>
-         <Link href="/">philltech@gmail.com</Link>
-         <Link href="/">+234-812-223-066</Link>
+         <Link href="">philltech@gmail.com</Link>
+         <Link href="/">+234-916-701-3749</Link>
          </section>
          <section className="info">
           <FooterHeading>INFORMATION</FooterHeading>
@@ -54,9 +58,10 @@ const Footer: React.FC = () =>{
          <FooterHeading>FOLLOW US</FooterHeading>
          <nav>
 
-         <Link href="/"><i className={`fa-solid ${whatsapp.iconClass}`}  /></Link>
-        <Link href="/"><i className={`fa-solid ${tiktok.iconClass}`}  /></Link>
-        <Link href="/"><i className={`fa-solid ${instagram.iconClass}`}  /></Link>
+         <Link href="https://chat.whatsapp.com/KM788MSo8p52CpAJswU76q" target="_blank"><i className={`fa-solid ${whatsapp.iconClass}`}  /></Link>
+        <Link href="https://www.tiktok.com/@philtechs" target="_blank"><i className={`fa-solid ${tiktok.iconClass}`}  /></Link>
+        <Link href="https://www.instagram.com/philtechs_org?igsh=MXVrZXpjbHZtbDRu" target="_blank"><i className={`fa-solid ${instagram.iconClass}`}  /></Link>
+        <Link href="https://discord.com/invite/ynyRp9FV" target="_blank"><i className={`fa-solid ${discord.iconClass}`}  /></Link>
          </nav>
       
         </section>
