@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import  { Main, Section, Nav, MobileHeader} from './Header.styled';
 import logo from '../../assets/img/logo.png';
+import {importedDivRef} from '../../pages/index';
 
 interface ListItem {
   content: string;
@@ -16,6 +17,16 @@ const bars: ListItem ={
 }
 
 const Header: React.FC = () => {
+
+  const displayDiv = () => {
+    if (importedDivRef.current) {
+          
+        importedDivRef.current.style.display='block'
+
+  
+     
+    }
+  };
   return (
     <>
     
@@ -45,7 +56,7 @@ const Header: React.FC = () => {
       </section>
 
     <section>
-    <i className={`fa-solid ${bars.iconClass}`}  />
+    <i className={`fa-solid ${bars.iconClass}`} onClick={displayDiv} />
     </section>
     </MobileHeader>
 

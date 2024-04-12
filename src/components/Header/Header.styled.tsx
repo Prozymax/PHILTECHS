@@ -81,7 +81,7 @@ a{
 `;
 const MobileHeader =styled.div`
 
-width: 95%;
+width: 98%;
 position: fixed;
 top:0;
 left:0;

@@ -1,4 +1,4 @@
-import { Span, FirstSection, 
+import { MobileNav, Span, FirstSection, 
           SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
@@ -8,10 +8,10 @@ import brain from "../assets/img/brain.png";
 import portrait from "../assets/img/manPortrait.jpg";
 import Image from 'next/image';
 import { useEffect } from 'react';
+import React, { useRef } from 'react';
 import faq from '../assets/img/faq.png'
 import { testFunc } from '../styles/Functions';
 import '../../public/favicon.ico'
-
 
 
 
@@ -63,7 +63,7 @@ const IconList7:ListItem ={
 }
 
 
-export default function Home() {
+const Home = () => {
   useEffect(() => {
     // Select all elements with the class 'grid' and the id 'target'
     const grids = document.querySelectorAll('.grid');
@@ -98,10 +98,26 @@ export default function Home() {
   }, []);
   
 
+    const importedDivRef = useRef(null);
+   
 
   return (
     <div style={styles}>
     <Header />
+
+    <MobileNav ref={importedDivRef}>
+
+      <div className='main' >
+        <section>
+          <Link href='/'>Home</Link>
+          <Link href='/'>About</Link>
+          <Link href='/'>Contact</Link>
+        </section>
+        <Link href='/' className='enroll'> Enroll Now</Link>
+      </div>
+
+    </MobileNav>
+
     <FirstSection>
       <div className='firstDiv'>
       <h1>
@@ -354,4 +370,5 @@ export default function Home() {
     <Footer />
     </div>
   );
-}
+};
+export default Home;

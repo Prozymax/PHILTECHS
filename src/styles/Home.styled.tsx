@@ -1,6 +1,79 @@
 import styled from "styled-components";
 
+const MobileNav = styled.div`
+a{
+  text-decoration:none;
+  padding:10px 20px;
+}
+z-index:10;
+width:105%;
+height:109vh;
+position:absolute;
+top:0;
+left:2px;
+background-color: rgba(0, 0, 0, 0.5);
+padding:20px;
 
+
+.main{
+  width:100%;
+  height:70%;
+  position:absolute;
+  bottom:-100%;
+  left:0;
+  background-color:#F5F5F5;
+  border-radius:35px 35px 0px 0px ;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-end;
+
+}
+section{
+  width:100%;
+  height:fit-content;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  padding-block:50px;
+}
+.enroll{
+  width:fit-content;
+  height:fit-content;
+  margin-bottom:70px;
+  margin-top:20px;
+  text-align:center;
+  padding:20px 50px;
+  background-color:purple;
+  border-radius:15px;
+  color:white;
+}
+.slideIn{
+  animation: slideInFromBottom .3s ease-in-out forwards;
+ }
+@keyframes slideInFromBottom {
+  from {
+    bottom:-100%;
+  }
+  to {
+    bottom: 0;
+  }
+ }
+ .slideOut{
+ 
+  animation: slideOutToBottom .3s ease-in-out forwards;
+ }
+ 
+ @keyframes slideOutToBottom {
+  from {
+    bottom:0;
+  }
+  to {
+    bottom: -100%;
+  }
+ }
+`; 
 
 
 const Span = styled.span`
@@ -20,12 +93,12 @@ const FirstSection = styled.div`
  padding:0% 7%;
  margin:0 auto;
  position:relative;
-background-color:#F5F5F5;
  height:100vh;
  display:flex;
  flex-direction:column;
  align-items:flex-start;
  justify-content:center;
+ background-color:#F5F5F5;
 
  a{
   text-decoration: none;
@@ -102,6 +175,7 @@ top:15%;
  }
  @media screen and (max-width: 900px) {
   width:100%;
+  height:108vh;
   padding-inline:7%;
 
 
@@ -218,9 +292,17 @@ const SecondSection = styled.div`
      .secondDiv section ul{
       width:100%;
       margin:0 auto;
+      flex-direction:column;
+      font-size:100%;
       padding:20px 0px 20px 0px ;
       
      }
+     .secondDiv section ul li{
+      width:100%;
+      height:fit-content;
+      padding-block:10px;
+     }
+  
      .secondDiv h2{
       font-size:230%;
       line-height:120%;
@@ -622,4 +704,4 @@ justify-content:space-evenly;
 
 }
 `;
-export  { Span, FirstSection, SecondSection, ThirdSection, FourthSection, FifthSection } ;
+export  { MobileNav, Span, FirstSection, SecondSection, ThirdSection, FourthSection, FifthSection } ;
