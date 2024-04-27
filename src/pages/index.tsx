@@ -105,7 +105,7 @@ const Home = () => {
     <div style={styles}>
     <Header />
 
-    <MobileNav ref={importedDivRef}>
+    {/* <MobileNav ref={importedDivRef}>
 
       <div className='main' >
         <section>
@@ -116,7 +116,7 @@ const Home = () => {
         <Link href='/' className='enroll'> Enroll Now</Link>
       </div>
 
-    </MobileNav>
+    </MobileNav> */}
 
     <FirstSection>
       <div className='firstDiv'>
