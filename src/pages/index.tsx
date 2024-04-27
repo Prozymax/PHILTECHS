@@ -1,4 +1,4 @@
-import { MobileNav, Span, FirstSection, 
+import { Span, FirstSection, 
           SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
