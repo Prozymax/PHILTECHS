@@ -1,7 +1,10 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
   "routes": [
-    { "src": "/index.tsx(.*)", "dest": "/" }
+    { "src": "/(.*)", "dest": "/" }
   ],
   "env": {
     "DEBUG_MODE": "true"
