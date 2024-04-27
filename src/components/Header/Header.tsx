@@ -18,15 +18,7 @@ const bars: ListItem ={
 
 const Header: React.FC = () => {
 
-  const displayDiv = () => {
-    if (importedDivRef.current) {
-          
-        importedDivRef.current.style.display='block'
 
-  
-     
-    }
-  };
   return (
     <>
     
@@ -56,7 +48,7 @@ const Header: React.FC = () => {
       </section>
 
     <section>
-    <i className={`fa-solid ${bars.iconClass}`} onClick={displayDiv} />
+    <i className={`fa-solid ${bars.iconClass}`} />
     </section>
     </MobileHeader>
 
