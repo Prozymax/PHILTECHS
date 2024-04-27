@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import  { Main, Section, Nav, MobileHeader} from './Header.styled';
 import logo from '../../assets/img/logo.png';
-import importedDivRef from '../../pages/index';
 
 interface ListItem {
   content: string;
