@@ -1,5 +1,5 @@
 import { Span, FirstSection, 
-          SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled'
+          SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled.tsx'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Link from 'next/link';
