@@ -12,6 +12,7 @@ import React, { useRef } from 'react';
 import faq from '../assets/img/faq.png'
 import { testFunc } from '../styles/Functions';
 import '../../public/favicon.ico'
+import '@fortawesome/fontawesome-free/css/all.css';
 
 
 
