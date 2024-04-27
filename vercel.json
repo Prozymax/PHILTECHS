@@ -1,7 +1,7 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    { "src": "/index.tsx(.*)", "dest": "/" }
   ],
   "env": {
     "DEBUG_MODE": "true"
