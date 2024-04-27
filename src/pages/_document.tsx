@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { DocumentContext } from 'next/dist/shared/lib/utils';
 
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
@@ -34,6 +35,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* Your meta tags and other head elements */}
           <meta property="og:title" content="PhilTech Academy" />
+         
           <meta property="og:description" content="Aquire Digital Skills with PhilTech" />
           <meta property="og:image" content="/favicon.ico" /> {/* Assuming favicon.ico is in the public folder */}
           <meta property="og:url" content="" />
