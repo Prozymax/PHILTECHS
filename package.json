@@ -15,6 +15,7 @@
     "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "sharp": "^0.33.3",
     "styled": "^1.0.0",
     "styled-components": "^6.1.8",
     "typeface-nunito": "^1.1.13"
@@ -23,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "typescript": "^5"
