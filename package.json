@@ -16,7 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "styled": "^1.0.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "typeface-nunito": "^1.1.13"
   },
   "devDependencies": {
     "@types/node": "^20",

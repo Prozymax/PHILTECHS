@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import 'typeface-nunito';
 
 const MobileNav = styled.div`
 a{
