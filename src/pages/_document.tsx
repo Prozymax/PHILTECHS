@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Home from "../pages/index"
 
 export default function Document() {
   return (
@@ -13,6 +14,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
+        <Home />
         <NextScript />
       </body>
     </Html>
