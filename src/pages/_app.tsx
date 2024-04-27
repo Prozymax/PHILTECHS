@@ -1,10 +1,11 @@
 import type { AppProps } from 'next/app';
 import '../styles/index.css'; // Import any global font styles
-
-export default function App({ Component, pageProps }: AppProps) {
+import '../styles/Home.styled';
+import Home from '../pages/index';
+export default function App({ pageProps }: AppProps) {
   return (
    
-           <Component {...pageProps} />
+           <Home {...pageProps} />
    
   );
 }
