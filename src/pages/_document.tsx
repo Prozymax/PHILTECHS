@@ -33,13 +33,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Your meta tags and other head elements */}
-          <meta property="og:title" content="PhilTech Academy" />
          
-          <meta property="og:description" content="Aquire Digital Skills with PhilTech" />
-          <meta property="og:image" content="/favicon.ico" /> {/* Assuming favicon.ico is in the public folder */}
-          <meta property="og:url" content="" />
-          <meta property="og:type" content="website" />
         </Head>
         <body>
           <Main />
