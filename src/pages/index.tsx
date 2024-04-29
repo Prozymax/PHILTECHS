@@ -5,13 +5,13 @@ import { Span, FirstSection, SecondSection, ThirdSection, FourthSection, FifthSe
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import Link from 'next/link';
-import bro from '@/assets/img/codingBro.png';
-import brain from '@/assets/img/brain.png';
-import portrait from '@/assets/img/manPortrait.jpg';
+import bro from '@/img/codingBro.png';
+import brain from '@/img/brain.png';
+import portrait from '@/img/manPortrait.jpg';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import React, { useRef } from 'react';
-import faq from '@/assets/img/faq.png';
+import faq from '@/img/faq.png';
 import { testFunc } from '@/styles/Functions';
 import '../../public/favicon.ico';
 import '@fortawesome/fontawesome-free/css/all.css';
