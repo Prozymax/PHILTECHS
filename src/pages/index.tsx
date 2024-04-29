@@ -67,7 +67,7 @@ iconClass:"fa-solid fa-arrow-left",
 }
 
 
-const Home = () => {
+const Home = ({ data }) => {
 useEffect(() => {
 // Select all elements with the class 'grid' and the id 'target'
 const grids = document.querySelectorAll('.grid');
@@ -376,3 +376,17 @@ Acquire
 );
 };
 export default Home;
+
+export async function getStaticProps() {
+  // Define the static data to pass as props
+  const data = {
+    message: 'Static data for the Home page',
+  };
+
+  // Return the data as props
+  return {
+    props: {
+      data,
+    },
+  };
+}
