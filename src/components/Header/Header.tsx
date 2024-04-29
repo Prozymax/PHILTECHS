@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import  { Main, Section, Nav, MobileHeader} from './Header.styled';
-import logo from '../../assets/img/logo.png';
+import logo from '@/img/logo.png';
 
 interface ListItem {
   content: string;
