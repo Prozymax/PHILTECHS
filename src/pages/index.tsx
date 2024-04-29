@@ -147,13 +147,13 @@ Acquire
 </section>
 </div>
 <div className="imgContainer">
-<Image src={brain} alt="brain" className="img" />
+<Image src={brain} alt="brain" className="img" priority={true}  />
 </div>
 </FirstSection>
 
 <SecondSection>
 <div className='firstDiv'>
-<Image src={bro} alt="brain" className="img" />
+<Image src={bro} alt="brain" className="img" priority={true}   />
 </div>
 <div className='secondDiv'>
 <Span>WHY CHOOSE US</Span>
@@ -296,7 +296,7 @@ Acquire
   <h2>Most Trending and Popular Question</h2>
 </div>
 <div className="imgContainer">
-<Image src={faq} alt="faq" className="img" />
+<Image src={faq} alt="faq" className="img" priority={true}  />
 </div>
 </div>
 </FourthSection>
