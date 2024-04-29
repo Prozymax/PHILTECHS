@@ -1,3 +1,6 @@
+//@ts-ignore
+
+
 import { Span, FirstSection, 
   SecondSection, ThirdSection, FourthSection, FifthSection } from '../styles/Home.styled'
 import Header from "@/components/Header/Header";
