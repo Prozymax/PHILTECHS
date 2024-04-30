@@ -24,7 +24,7 @@ const Header: React.FC = () => {
     
     <Main>
       <Section>
-        <Image src={logo} alt="Logo" className="img" />
+        <img src={logo.src} alt="Logo" className="img" />
         <h1 className='logoText'><span>Phil</span>techs.</h1>
       </Section>
       <Nav>

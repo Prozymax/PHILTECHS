@@ -6,9 +6,9 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import Link from 'next/link';
 import bro from '@/img/codingBro.png';
+
 import brain from '@/img/brain.png';
 import portrait from '@/img/manPortrait.jpg';
-import Image from 'next/image';
 import { useEffect } from 'react';
 import React, { useRef } from 'react';
 import faq from '@/img/faq.png';
@@ -145,13 +145,13 @@ Acquire
 </section>
 </div>
 <div className="imgContainer">
-<Image src={brain} alt="brain" className="img" priority={true}  />
+< img src={brain.src} alt="brain" className="img" />
 </div>
 </FirstSection>
 
 <SecondSection>
 <div className='firstDiv'>
-<Image src={bro} alt="brain" className="img" priority={true}   />
+<img src={bro.src} alt="brain" className="img"    />
 </div>
 <div className='secondDiv'>
 <Span>WHY CHOOSE US</Span>
@@ -294,7 +294,7 @@ Acquire
   <h2>Most Trending and Popular Question</h2>
 </div>
 <div className="imgContainer">
-<Image src={faq} alt="faq" className="img" priority={true}  />
+<img src={faq.src} alt="faq" className="img"  />
 </div>
 </div>
 </FourthSection>
@@ -317,7 +317,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt="" />
+      <img src={portrait.src} alt="" />
       </figure>
       <article>
         <h3>Favour Amaechi</h3>
@@ -336,7 +336,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt="" />
+      <img src={portrait.src} alt="" />
       </figure>
       <article>
         <h3>Daniel anozie</h3>
@@ -355,7 +355,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt=""  />
+      <img src={portrait.src} alt=""  />
       </figure>
       <article>
         <h3>Onyebuhi Charlse</h3>
