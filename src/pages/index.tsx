@@ -9,6 +9,7 @@ import bro from '@/img/codingBro.png';
 
 import brain from '@/img/brain.png';
 import portrait from '@/img/manPortrait.jpg';
+import Image from 'next/image';
 import { useEffect } from 'react';
 import React, { useRef } from 'react';
 import faq from '@/img/faq.png';
@@ -145,13 +146,13 @@ Acquire
 </section>
 </div>
 <div className="imgContainer">
-< img src={brain.src} alt="brain" className="img" />
+<Image src={brain} alt="brain" className="img" priority={true} width={500} height={500} />
 </div>
 </FirstSection>
 
 <SecondSection>
 <div className='firstDiv'>
-<img src={bro.src} alt="brain" className="img"    />
+<Image src={bro} alt="brain" className="img" priority={true}   />
 </div>
 <div className='secondDiv'>
 <Span>WHY CHOOSE US</Span>
@@ -294,7 +295,7 @@ Acquire
   <h2>Most Trending and Popular Question</h2>
 </div>
 <div className="imgContainer">
-<img src={faq.src} alt="faq" className="img"  />
+<Image src={faq} alt="faq" className="img" priority={true}  />
 </div>
 </div>
 </FourthSection>
@@ -317,7 +318,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <img src={portrait.src} alt="" />
+      <Image src={portrait} alt="" />
       </figure>
       <article>
         <h3>Favour Amaechi</h3>
@@ -336,7 +337,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <img src={portrait.src} alt="" />
+      <Image src={portrait} alt="" />
       </figure>
       <article>
         <h3>Daniel anozie</h3>
@@ -355,7 +356,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <img src={portrait.src} alt=""  />
+      <Image src={portrait} alt=""  />
       </figure>
       <article>
         <h3>Onyebuhi Charlse</h3>
