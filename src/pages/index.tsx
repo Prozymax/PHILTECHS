@@ -146,13 +146,13 @@ Acquire
 </section>
 </div>
 <div className="imgContainer">
-<Image src={brain} alt="brain" className="img" priority={true} width={500} height={500} />
+{/* <Image src={brain} alt="brain" className="img" priority={true} /> */}
 </div>
 </FirstSection>
 
 <SecondSection>
 <div className='firstDiv'>
-<Image src={bro} alt="brain" className="img" priority={true}   />
+{/* <Image src={bro} alt="brain" className="img" priority={true}   /> */}
 </div>
 <div className='secondDiv'>
 <Span>WHY CHOOSE US</Span>
@@ -295,7 +295,7 @@ Acquire
   <h2>Most Trending and Popular Question</h2>
 </div>
 <div className="imgContainer">
-<Image src={faq} alt="faq" className="img" priority={true}  />
+{/* <Image src={faq} alt="faq" className="img" priority={true}  /> */}
 </div>
 </div>
 </FourthSection>
@@ -318,7 +318,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt="" />
+      {/* <Image src={portrait} alt="" /> */}
       </figure>
       <article>
         <h3>Favour Amaechi</h3>
@@ -337,7 +337,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt="" />
+      {/* <Image src={portrait} alt="" /> */}
       </figure>
       <article>
         <h3>Daniel anozie</h3>
@@ -356,7 +356,7 @@ Acquire
     </section>
     <section>
       <figure>
-      <Image src={portrait} alt=""  />
+      {/* <Image src={portrait} alt=""  /> */}
       </figure>
       <article>
         <h3>Onyebuhi Charlse</h3>
