@@ -121,7 +121,7 @@ header .lastLink:hover{
 
 
 firstSection{
- width:85%;
+ width:100%;
  font-family:Josefin Sans;
  padding:0% 7%;
  margin:0 auto;
@@ -169,11 +169,12 @@ firstSection span:nth-of-type(2){
 
 firstSection .secondDiv{
  width:40%;
- margin:-3% 0px 0px 0px ;
+ margin:0px 0px 0px 0px ;
  padding:0;
  display:flex;
  height:fit-content;
 flex-direction:column;
+
 align-items:flex-start;
 justify-content:center;
 gap:20px;
@@ -183,6 +184,7 @@ firstSection .secondDiv article{
  color:gray;
  line-height:140%;
  padding:0;
+ height: fit-content;
 }
 firstSection .secondDiv section{
  display:flex;
@@ -287,7 +289,7 @@ secondSection .secondDiv section ul li i{
 }
 
 thirdSection{
- width:85%;
+ width:100%;
  height:120vh;
  margin:0 auto;
  padding:0% 7%;
@@ -328,7 +330,7 @@ thirdSection .secondDiv{
  gap:10px;
 }
 thirdSection .secondDiv .grid{
- width:20%;
+ width:23%;
  height:55%;
  display:flex;
 
@@ -404,7 +406,7 @@ thirdSection .grid:not(:hover)::before {
 }
 
 fourthSection{
- width:90%;
+ width:100%;
 height:90vh;
 margin:0 auto;
 padding:5% 5%;
@@ -489,10 +491,10 @@ fourthSection .secondDiv .imgContainer .img{
 }
 
 fifthSection{
- width:90%;
-height:90vh;
+ width:100%;
+height:120vh;
 margin:0 auto;
-padding:5% 5%;
+padding:2% 5%;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -518,6 +520,7 @@ justify-content:center;
 }
 fifthSection .firstDiv h1{
  font-size:300%;
+ margin: 20px;
 }
 fifthSection .secondDiv{
  width:103%;
@@ -530,7 +533,7 @@ font-family:Josefin Sans;
 justify-content:space-evenly;
 }
 fifthSection .secondDiv .rollerItem{
- width:25%;
+ width:30%;
  height:fit-content;
  border-radius:30px;
  background-color:white;
@@ -795,7 +798,7 @@ footer footerHeading{
 
 header nav, .lastLink
 {
-  display: none;;
+  display: none;
 }
 
 header img 
@@ -805,7 +808,7 @@ header img
 
 firstSection{
  width:100%;
- height:fit-content;
+ height:90vh;
  padding-inline:none;
  padding-block: 4%;;
 }
@@ -826,12 +829,12 @@ firstSection .firstDiv{
  
  .imgContainer img 
  {
-  width: 80%;height: fit-content;position: relative;margin: 0 auto;
+ display: none;
  }
  
  firstSection .secondDiv section a{
   font-size: 90%;font-weight: 500;
-  padding: 20px 45px;
+  padding: 20px 30px;
  }
 
 secondSection{
@@ -950,7 +953,7 @@ secondSection .firstDiv{
     fifthSection .secondDiv .rollerItem section:nth-of-type(2) article{
      line-height: 150%;
     }
-    background-color:#F5F5F5; .rollerItem section:nth-of-type(3) article{
+    fifthSection .rollerItem section:nth-of-type(3) article{
      line-height: 150%;
     }
     fifthSection  .firstDiv h1{
