@@ -33,6 +33,13 @@ body{
  position: relative;
  overflow-x: hidden;
 }
+#hamburger{
+  color: #620063;
+  display: none;
+  font-size: 200%;
+
+ 
+}
 #span{
  font-size:150%;
  margin:0;
@@ -336,7 +343,7 @@ thirdSection .secondDiv .grid{
  flex-direction:column;
  align-items:center;
  justify-content:center;
- gap:10px;
+ gap:15px;
  padding:0px 20px;
  position:relative;
  border-radius: 30px;
@@ -354,7 +361,7 @@ thirdSection .grid .counterGrid{
  flex-direction:column;
  align-items:center;
  justify-content:center;
- gap:5px;
+ gap:20px;
 
 }
 thirdSection .counterGrid  i{
@@ -406,7 +413,7 @@ thirdSection .grid:not(:hover)::before {
 
 fourthSection{
  width:100%;
-height:90vh;
+height:100vh;
 margin:0 auto;
 padding:5% 5%;
 display:flex;
@@ -490,8 +497,8 @@ fourthSection .secondDiv .imgContainer .img{
 }
 
 fifthSection{
- width:90%;
-height:90vh;
+ width:100%;
+height:130vh;
 margin:0 auto;
 padding:2% 5%;
 display:flex;
@@ -518,6 +525,7 @@ justify-content:center;
 }
 fifthSection .firstDiv h1{
  font-size:300%;
+ margin-top: 20px;
 }
 fifthSection .secondDiv{
  width:103%;
@@ -613,7 +621,7 @@ fifthSection .thirdDiv p{
  background-color:white;
  height:30px;
  border-radius:50%;
- padding:10px;
+ padding:30px;
 }
 
 fifthSection .thirdDiv p i{
@@ -635,7 +643,13 @@ footer{
 }
 footer a{
  text-decoration:none;
- color:purple;
+ color:gray;
+}
+footer a:hover{
+  color: #620063;
+}
+footer i{
+  color: #620063;
 }
 
 footer .mainSection{
@@ -693,7 +707,8 @@ footer .mainSection .firstDiv .info nav{
  display:flex;
  flex-direction:column;
  gap:10px;
- font-size:120%;
+ font-size:110%;
+ margin-top:20px ;
 }
 footer .mainSection .secondDiv{
 width:95%;
@@ -747,15 +762,17 @@ footer .mainSection .secondDiv .subscribe nav{
 footer .mainSection .secondDiv .subscribe nav input{
  height:40px;
  width:40%;
+
  background-color:whitesmoke;
  border:none;color: inherit;
- font-size:100%;
+ font-size:90%;
 }
 footer .mainSection .secondDiv .subscribe nav input:focus{
  outline:none;
 }
 
 footer .mainSection .secondDiv .subscribe nav i { color: inherit }
+footer .mainSection .secondDiv .subscribe nav a{ background-color: #620063; color: white; padding: 10px 30px; height: fit-content; width: fit-content; border-radius: 30px; font-size: 90%;}
 
 footer .terms 
 {
@@ -789,12 +806,15 @@ footer footerHeading{
   }
 
  header{
-  position: relative;
-  height: 8vh;width: 70%;margin: 0 auto;;
+  position: relative; display: flex; align-items: center; justify-content: space-between;
+  height: 10vh;width: 85%;margin: 0 auto;; padding: 0px 0px 0px 35px;
  }
  header section img 
  {
   width: 100%;
+ }
+ #hamburger{
+  display: block;
  }
 
 header nav, .lastLink
@@ -804,7 +824,7 @@ header nav, .lastLink
 
 header img 
 {
-  width: 50%;;
+  width: 80%;
 }
 
 firstSection{
@@ -824,6 +844,10 @@ firstSection .firstDiv{
  firstSection .secondDiv{
    width:100%;
  }
+ 
+firstSection .secondDiv article{
+  margin-top: -14%;
+}
  firstSection .imgContainer{
    display: block;width: 100%;;position: relative;height: fit-content;
  }
@@ -844,7 +868,7 @@ secondSection{
  margin:0 auto;
  width: 100%;
  padding: 0;
- padding-inline:5%;
+ padding-inline:3%;
  gap:30px;
  padding-block:50px;
 }
@@ -853,7 +877,7 @@ secondSection{
 secondSection .firstDiv{
       width:100%;
       margin:0 auto;
-      padding:10px;
+      padding:0px;
       gap:20px;
      }
      secondSection .secondDiv{
@@ -875,7 +899,7 @@ secondSection .firstDiv{
      }
   
      secondSection  .secondDiv h2{
-      font-size:230%;
+      font-size:200%;
       line-height:120%;
      }
 
@@ -899,10 +923,10 @@ secondSection .firstDiv{
      gap:50px;
    }
    thirdSection .secondDiv .grid{
-     max-width:400px;
-     width:90%;
-     max-height:400px;
-     height:300px;
+     max-width:500px;
+     width:95%;
+     max-height:600px;
+     height:fit-content;
      padding-block:50px;
    }
 
@@ -910,24 +934,32 @@ secondSection .firstDiv{
   fourthSection{
    flex-direction:column-reverse;
    height:fit-content;
-   width:95%;
+   width:100%;
    margin:0 auto;
    padding-block:50px;
-   padding-inline:7%;
+   padding-inline:3%;
   }
  
   fourthSection  .firstDiv{
      width:100%;
    }
+ 
+   fourthSection  .firstDiv .listHead{
+    line-height: 140%;
+   }
    fourthSection .secondDiv{
      width:100%;
+   }
+   fourthSection  .secondDiv h2{
+    margin-top: 30px;
+    line-height: 130%;
    }
    fourthSection .firstDiv article {
     line-height: 140%;
     color: gray;
    }
    fourthSection .secondDiv .caption{
-     font-size:170%;
+     font-size:150%;
     }
 
 
@@ -958,10 +990,11 @@ secondSection .firstDiv{
      line-height: 150%;
     }
     fifthSection  .firstDiv h1{
-      font-size:200%;
-      line-height:110%;
+      font-size:180%;
+      line-height:120%;
       padding: 0;
       margin: 0 auto;
+      margin-top: 20px;
       text-align: center;
     }
 
@@ -992,17 +1025,21 @@ footer .mainSection{
     footer  .mainSection .firstDiv{
       flex-direction:column;
       margin:0 auto;
-      width:98%;
+      width:100%;
       height:fit-content;
       align-items:flex-start;
       height:fit-content;
       gap:30px;
     }
+    footer  .mainSection .firstDiv .getInTouch {
+      width: 100%;
+      padding-left: 3%;
+    }
     footer .mainSection .secondDiv{
       flex-direction:column;
        height:fit-content;
       margin:0 auto;
-      width:98%;
+      width:100%;
       padding:0 auto;
       align-items:flex-start;
       gap:30px;
@@ -1012,20 +1049,31 @@ footer .mainSection{
       width:100%;
       align-items:flex-start;
       height:fit-content;
+     
   }
   footer .mainSection .secondDiv .subscribe{
     width:100%;
+    padding-left: 3%;
+  }
+  footer .mainSection .secondDiv .followUs{
+    padding-left: 3%;
+  }
+  footer .mainSection .firstDiv .info{
+    padding-left: 3%;
   }
 
   footer .mainSection .secondDiv .subscribe nav 
   {
-    background: rgba(62, 1, 63, 0.801);padding: 2% 4%;
-    border-radius: 5px;color: white;width: 95%;;
+   padding: 2% 2%;
+    border-radius: 5px;color: white;width: 95%;
+  }
+  footer .mainSection .secondDiv .subscribe nav i{
+    color: #620063;
   }
 
   footer .mainSection .secondDiv .subscribe nav a
   {
-    font-size: 80%;color: inherit;
+    font-size: 80%;color: inherit; 
   }
 
   footer .mainSection .secondDiv .subscribe nav input { font-size: 80%;background: none;color: white;; }
