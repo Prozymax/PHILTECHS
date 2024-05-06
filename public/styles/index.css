@@ -5,7 +5,7 @@
  --font-josefin-sans: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 }
 
-::placeholder { color: white; }
+::placeholder { color: rgb(213, 200, 214) }
 
 * 
 {
@@ -145,7 +145,7 @@ firstSection .firstDiv{
  width:60%;
  padding:0;
  margin:0;
- height:fit-content;
+ height: 25%;
 
 }
 firstSection .firstDiv h1{
@@ -333,7 +333,6 @@ thirdSection .secondDiv .grid{
  width:23%;
  height:55%;
  display:flex;
-
  flex-direction:column;
  align-items:center;
  justify-content:center;
@@ -491,8 +490,8 @@ fourthSection .secondDiv .imgContainer .img{
 }
 
 fifthSection{
- width:100%;
-height:120vh;
+ width:90%;
+height:90vh;
 margin:0 auto;
 padding:2% 5%;
 display:flex;
@@ -508,7 +507,6 @@ background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
 fifthSection .firstDiv{
  width:100%;
  height:fit-content;
- height:fit-content;
  margin:0 auto;
  padding:20px;
  display:flex;
@@ -520,7 +518,6 @@ justify-content:center;
 }
 fifthSection .firstDiv h1{
  font-size:300%;
- margin: 20px;
 }
 fifthSection .secondDiv{
  width:103%;
@@ -741,7 +738,7 @@ flex-direction:column;
 footer .mainSection .secondDiv .subscribe nav{
  width:100%;
  display:flex;
- flex-direction:row;
+ flex-direction:row;color: var(--primary-color-100);
  align-items:center;
  justify-content:flex-start;
  gap:10px;
@@ -749,14 +746,16 @@ footer .mainSection .secondDiv .subscribe nav{
 }
 footer .mainSection .secondDiv .subscribe nav input{
  height:40px;
- width:60%;
+ width:40%;
  background-color:whitesmoke;
- border:none;
- font-size:90%;
+ border:none;color: inherit;
+ font-size:100%;
 }
 footer .mainSection .secondDiv .subscribe nav input:focus{
  outline:none;
 }
+
+footer .mainSection .secondDiv .subscribe nav i { color: inherit }
 
 footer .terms 
 {
@@ -781,6 +780,8 @@ footer footerHeading{
 
 
 @media screen and (max-width: 900px) {
+
+  ::placeholder { color: rgb(197, 197, 197); }
 
   body 
   {
