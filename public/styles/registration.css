@@ -1,0 +1,193 @@
+body{
+ background-color:  rgba(128, 0, 128, 0.1);
+}
+.background{
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 40px;
+ /* background-color:  rgba(128, 0, 128, 0.1); */
+}
+#logo{
+height: 70px;
+ margin: 0 auto;
+
+
+}
+#logo img{
+height: 100%;
+ margin: 0 auto;
+}
+.mainSection{
+ width: 40%;
+
+ height: 93%;
+ background-color: rgba(128, 0, 128, 0.06);
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-right: 16px;
+ padding-top: 20px;
+ justify-content: center;
+}
+ .figure{
+width: 45%;
+height: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+ #img{
+ width: 100%;
+ }
+ .topSection{
+  width: 90%;
+  height: fit-content;
+   font-family: Josefin Sans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  
+  margin: 0 auto;
+ }
+ .topSection h1{
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 200%;
+  font-weight: 500;
+
+ }
+ .topSection h3{
+ font-size: 150%;
+ font-weight: 400;
+  margin: 10px 0px 10px 0px ;
+  padding: 0 auto;
+ }
+ #nav{
+  width: 80%;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  padding: 0 auto;
+  z-index: 10;
+
+
+ }
+ #nav i{
+  color: purple;
+  font-size: 200%;
+  font-weight: 500;
+ }
+ #regForm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  height:80%;
+ margin-top:-70px;
+  flex-direction: column;
+  font-family: Nunito;
+  /* position: relative; */
+ }
+ #regForm input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 35px;
+  padding: 5px 10px;
+  outline: none;
+  user-select: none;
+  border: none;
+  font-size: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  border: solid 1px rgba(128, 128, 128, 0.4) ;
+ }
+ #regForm label{
+  font-weight: bold;
+  color: rgb(87, 80, 80);
+ }
+ #regForm #submitBtn{
+
+  width: 70%;
+  height: fit-content;
+  padding: 15px 30px;
+ margin: 0 auto;
+  background-color: purple;
+ font-family: Nunito;
+  color: white;
+ }
+ .bottomText{
+  color: gray;
+  font-family: Nunito;
+  font-weight: light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin: 0 auto;
+
+ }
+ .bottomText i{
+  color: purple;
+  font-size: 100%;
+  letter-spacing: 2px;
+ }.bottomText a{
+  color: purple;
+  font-size: 100%;
+  text-decoration: none;
+ }
+
+
+ @media screen and (max-width: 900px) {
+ 
+  .background{
+   height: 90vh;
+  
+  }
+  .mainSection{
+   width: 93%;
+   height: 90%;
+   background-color: white;
+  }
+  .figure{
+   display: none;
+  }
+  .topSection nav{
+   margin-top: 10px;
+  }
+  .topSection nav i{
+   font-size: 200%;
+  }
+  #regForm{
+   width: 85%;
+  
+  }
+  #regForm input{
+   width: 100%;
+  }
+  .bottomText{
+   font-size: 85%;
+   margin: 0 auto;
+  }
+ }
+
+ @media screen and (max-width: 380px) {
+  .background{
+   height: 120vh;
+  }
+  .mainSection{
+   height: 90%;
+  }
+ }

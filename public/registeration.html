@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles/registration.css">
+  <script src="./js/reg.js" defer ></script>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+ <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+ <script src="https://kit.fontawesome.com/de5a5af81b.js" crossorigin="anonymous"></script>
+ <title>Enroll now</title>
+</head>
+<body>
+  <div class="background">
+    <!-- <p id="backArrow"><i class="fa-solid fa-arrow-left"></i></p> -->
+    <div class="mainSection">
+      <section class="topSection">
+        <figure id="logo">
+          <img src="./assets/img/image-removebg-preview.png" alt="" srcset="">
+        </figure>
+       <h1>
+        Join Our bootcamp
+       </h1>
+       <h3>Follow our socials</h3>
+      
+      
+      </section>
+      <form  action="" id="regForm" onsubmit="return validateForm();" action="sucess.html" >
+
+        <label for="userFullName">Name</label>
+        <input name="userFullName" type="text" placeholder="John Doe" required>
+
+        <label for="userEmail"> Email address </label>
+        <input name="userEmail" type="email" placeholder="example@gmail.com" required>
+        
+        <label for="userTel">Phone Number</label>
+        <input name="userTel" type="tel" placeholder="123-456-7890"  required>
+
+        <label for="userNameForSocials">Socials Username</label>
+        <input name="userNameForSocials" type="text" required>
+
+       <input type="submit" value="Submit" id="submitBtn">
+     </form>
+
+
+     <nav id="nav">
+      
+      <a href="https://www.instagram.com/philtechs_org?igsh=MXVrZXpjbHZtbDRu" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@philtechs" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://discord.com/invite/ynyRp9FV" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://chat.whatsapp.com/KM788MSo8p52CpAJswU76q" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </nav>
+
+     <p class="bottomText">
+      Join our community on
+      <a href="https://chat.whatsapp.com/KM788MSo8p52CpAJswU76q" target="_blank"><i class="fab fa-whatsapp">  </i>whatsapp</a>
+      <span>recommended</span>
+     </p>
+    </div>
+
+    <div class="figure">
+      <img src="./assets/img/codingBroo.png" alt="" srcset="" id="img">
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!-- Crreate Account => Register
+Already Registered => Follow our Socials
+google icon => Philtechs various social media platforms in a flex box
+Fullname input and email input then create another input to receive the usernames of the users after they've visited
+then put a whatsapp link  for them label it recommended
+let it link to our channel -->
