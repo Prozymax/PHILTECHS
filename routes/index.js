@@ -7,7 +7,7 @@ const pool = require('../config/db')
 const indexRouter = express.Router()
 app.use(bodyParser.urlencoded({ extended: true }))
 
-indexRouter.get('/register', (request, response) => {
+indexRouter.get('/enroll', (request, response) => {
     response.sendFile(path.join(__dirname, '../public/registration.html'))
 })
 
