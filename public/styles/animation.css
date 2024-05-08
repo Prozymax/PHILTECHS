@@ -1,0 +1,89 @@
+firstSection .secondDiv article {
+ animation: blur-in 2000ms forwards ease-out;
+ animation-delay: 400ms;
+ opacity: 0;
+ filter: blur(50px);
+ transform: translateY(100px);
+}
+
+firstSection .secondDiv section a{
+ animation: blur-in 1500ms forwards ease-out;
+ animation-delay: 600ms;
+ opacity: 0;
+
+ transform: translateY(60px);
+}
+
+firstSection .firstDiv h1{
+ animation: fade-in 2000ms forwards ease-out;
+ animation-delay: 400ms;
+ opacity: 0;
+ filter: blur(50px);
+}
+firstSection .firstDiv h1 span{
+ animation: fade-in 2000ms forwards ease-out;
+ animation-delay: 1000ms;
+ opacity: 0;
+ filter: blur(50px);
+}
+firstSection .imgContainer .img{
+ animation: fade-in 2000ms forwards ease-out;
+ animation-delay: 800ms;
+ opacity: 0;
+ filter: blur(50px);
+}
+figure img{
+ animation: fade-in 2000ms forwards ease-out;
+ animation-delay: 400ms;
+ opacity: 0;
+ filter: blur(50px);
+}
+
+
+@keyframes fade-in {
+ 0%{
+  filter: blur(50px);
+  opacity: 0;
+ }
+ 40%{
+  filter: blur(30px);
+  opacity: .3;
+ }
+ 70%{
+  filter: blur(10px);
+  opacity: .8;
+ }
+ 100%{
+  filter: blur(0px);
+  opacity: 1;
+ }
+}
+
+@keyframes blur-in {
+ 0% {
+  opacity: 0;
+  transform: translateY(160px);
+  filter: blur(50px);
+ }
+ 30% {
+  opacity: .5;
+  transform: translateY(120px);
+  filter: blur(30px);
+ }
+
+ 60% {
+  opacity: .7;
+  transform: translateY(100px);
+  filter: blur(10px);
+ }
+
+ 100% {
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0px);
+ }
+}
+
+
+
+

@@ -140,6 +140,7 @@ firstSection{
  align-items:flex-start;
  justify-content:center;
  background-color:#F5F5F5;
+ 
 
 
 
@@ -631,7 +632,7 @@ fifthSection .thirdDiv p i{
 }
 footer{
  width:100%;
- height:90vh;
+ height:100vh;
  display:flex;
  margin:0;
  padding:0;
@@ -639,8 +640,13 @@ footer{
  align-items:center;
  justify-content:center;
  font-Family:Nunito;
- background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
- ,  rgba(128, 0, 128, 0.2));
+ background-color: #00000071;
+ background-image: url(/assets/img/back.jpg);
+ background-position: right;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode: soft-light;
+
 }
 footer a{
  text-decoration:none;
@@ -650,7 +656,7 @@ footer a:hover{
   color: #620063;
 }
 footer i{
-  color: #620063;
+  color: #a50aa8;
 }
 
 footer .mainSection{
@@ -658,7 +664,7 @@ footer .mainSection{
 height:80%;
 display:flex;
 margin:0 auto;
-padding:0px 0px 0px 5%;
+padding:0px 0px 0px 0%;
 border-radius:30px;
 align-items:center;
 justify-content:center;
@@ -777,12 +783,13 @@ footer .mainSection .secondDiv .subscribe nav a{ background-color: #620063; colo
 
 footer .terms 
 {
-  padding: 2% 0;font-size: 80%; 
+  padding: 2% 0;font-size: 80%;
+  color: white;
 }
 
 footer .terms span{
  margin-right:8px;
- color:purple;
+ color:rgb(245, 106, 245);
  font-weight:500;
 }
 
@@ -808,7 +815,7 @@ footer footerHeading{
 
  header{
   position: relative; display: flex; align-items: center; justify-content: space-between;
-  height: 10vh;width: 85%;margin: 0 auto;; padding: 0px 0px 0px 35px;
+  height: 8vh;width: 85%;margin: 0 auto;; padding: 0px 0px 0px 35px; 
  }
  header section img 
  {
@@ -830,9 +837,15 @@ header img
 
 firstSection{
  width:100%;
- height:90vh;
+ height:95vh;
  padding-inline:none;
  padding-block: 4%;;
+ background-color: #00000071;
+ background-image: url(/assets/img/back.jpg);
+ background-position: right;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode: soft-light;
 }
 
 
@@ -841,13 +854,20 @@ firstSection .firstDiv{
  }
  firstSection .firstDiv h1{
    font-size:200%;padding: 2% 0;
+   color: whitesmoke;
+  
+ }
+ firstSection .firstDiv h1 span{
+  color: #f03af4;
  }
  firstSection .secondDiv{
    width:100%;
  }
  
 firstSection .secondDiv article{
-  margin-top: -14%;
+  margin-top: -25%;
+  color: whitesmoke;
+ 
 }
  firstSection .imgContainer{
    display: block;width: 100%;;position: relative;height: fit-content;
@@ -1010,7 +1030,10 @@ footer{
  width:100%;
  height:fit-content;
  padding-inline:2%;
+ padding-block: 10%;
  margin:0 auto;
+ /* background: linear-gradient(to right, rgba(245, 245, 245, 0.5)
+ ,  rgba(128, 0, 128, 0.2)); */
 }
    
       
@@ -1082,5 +1105,29 @@ footer .mainSection{
   footer .mainSection .secondDiv .followUs nav{
     margin-top:10px;
   }
-
+  /* footer .terms 
+  {
+    color: black;
+  }
+  footer .terms span{
+    color: purple;
+  } */
+  footer .terms {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  firstSection .firstDiv h1{
+    font-size:200%;padding: 2% 0;
+    margin-top: -10%;
+  }
+  firstSection .secondDiv{
+    width:100%;
+  }
+  
+ firstSection .secondDiv article{
+   margin-top: -10%;
+  
+ }
+  
 }
