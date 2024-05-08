@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="styles/registration.css">
-  <script src="./js/reg.js" defer ></script>
+  <script defer src="js/reg.js" defer ></script>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
@@ -26,7 +26,7 @@
       
       
       </section>
-      <form  action="" id="regForm" onsubmit="return validateForm();" action="sucess.html" >
+      <form action="/signup" id="regForm" onsubmit="return validateForm();" method="post">
 
         <label for="userFullName">Name</label>
         <input name="userFullName" type="text" placeholder="John Doe" required>
@@ -37,8 +37,11 @@
         <label for="userTel">Phone Number</label>
         <input name="userTel" type="tel" placeholder="123-456-7890"  required>
 
-        <label for="userNameForSocials">Socials Username</label>
-        <input name="userNameForSocials" type="text" required>
+        <label for="twitter_username">Twitter Username</label>
+        <input name="twitter_username" id="twitter_username" type="text" required placeholder="JohnDoe321">
+        <label for="insta_username">Instagram Username</label>
+        <input name="insta_username" id="insta_username" type="text" required placeholder="JohnDoe91">
+        
 
        <input type="submit" value="Submit" id="submitBtn">
      </form>
@@ -50,6 +53,8 @@
       <a href="https://www.tiktok.com/@philtechs" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://discord.com/invite/ynyRp9FV" target="_blank"><i class="fab fa-discord"></i></a>
       <a href="https://chat.whatsapp.com/KM788MSo8p52CpAJswU76q" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </nav>
 
      <p class="bottomText">
