@@ -52,4 +52,14 @@ window.onload = function() {
   });
 };
 
+const hamburger = document.querySelector('#hamburger');
+const closeButton = document.querySelector('#closeButton');
+const mobileNav = document.querySelector('.mobileViewNav')
 
+hamburger.addEventListener('click', function(){
+  mobileNav.style.display='flex';
+});
+
+closeButton.addEventListener('click', function(){
+  mobileNav.style.display='none';
+});

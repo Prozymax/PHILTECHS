@@ -19,6 +19,98 @@ body
   user-select: none;
 }
 
+.mobileViewNav{
+
+  width: 100%;
+  height:100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.396);
+  display: none;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: flex-end;
+}
+.mobileViewNav a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 110%;
+}
+.mobileViewNav a i{
+  color: purple;
+  margin-inline: 10px;
+}
+.mobileViewNav .innerDiv{
+  width: 100%;
+  height: 70%;
+  padding: 5%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 20px 20px 0px 0px;
+  
+
+}
+.mobileViewNav .innerDiv p{
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+}
+.mobileViewNav ul{
+  width: 100%;
+  height: 50%;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding-left: 5px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.mobileViewNav .logo{
+  width: 80%;
+ height: auto;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ 
+ }
+
+ .mobileViewNav .logo span{
+  font-size:110%;
+  color:purple;
+ }
+
+ .mobileViewNav .logo img{
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+ }
+ .mobileViewNav .logoText{
+  font-size:140%;
+  margin: 0;
+ }
+ .mobileViewNav .enroll-button{
+  background-color: var(--primary-color-100);
+  padding:15px 35px;
+  border-radius:30px;
+  color:white;
+  margin-top: 20px;
+ }
+
+
 
 @font-face {
  font-family: 'Nunito';
@@ -830,6 +922,9 @@ footer footerHeading{
  #hamburger{
   display: block;
  }
+ /* .mobileViewNav{
+  display: flex;
+ } */
 
 header nav, .lastLink
 {
