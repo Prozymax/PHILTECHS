@@ -11,7 +11,7 @@ indexRouter.get('/enroll', (request, response) => {
     response.sendFile(path.join(__dirname, '../public/registration.html'))
 })
 
-indexRouter.post('/signup', (request, response) => {
+indexRouter.post('./signUp', (request, response) => {
     const { userFullName, userEmail, userTel, twitter_username, insta_username } = request.body;
     console.log(request.body.fullname)
     if (request.body) {
