@@ -1,0 +1,435 @@
+@media only screen and (max-width: 900px) {
+#header h1, #header img
+{
+
+    display: none;
+    visibility: hidden;
+}
+
+body 
+{
+  overflow-x: hidden;
+}
+
+
+#about
+{
+    display: block;
+    padding: 5% 0;;
+    height: auto;
+}
+
+#cover
+{
+    position: absolute;;
+    background-image: url('/img/map\ \(2\).jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    filter: grayscale(80%);
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about div:first-child
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    margin-right: none;
+    margin-top: none;
+}
+
+#about div:first-child section
+{
+    width: 100%;
+    height: 40%;
+    background-position: bottom;
+    background-size: 150%;
+}
+
+#about div:first-child article
+{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;;
+}
+
+#about div:last-child
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+#about div:last-child section
+{
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+    height: 100%;
+}
+
+#about div:last-child section span
+{
+    font-size: 80%;
+}
+
+#about div:last-child section h1
+{
+    font-size: 200%;;
+}
+
+#about div:last-child section aside
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about aside p
+{
+    width: 30%;;
+    box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.115);
+}
+
+#about p i
+{
+    font-size: 150%;
+}
+
+#about a
+{
+    width: 50%;
+    background: var(--primary-color-100);
+    color: var(--accentColor);
+    height: 60px;
+    transition: .5s;
+    border-radius: 30px;
+}
+#about a:hover
+{
+    color: var(--primary-color-100);
+    background-color: white;
+    border: .1em solid var(--primary-color-100);
+}
+
+#about_intro
+{
+    height: 70vh;
+    background-position: right;
+    background-size: cover;
+}
+
+#about_intro section span a:hover
+{
+    text-decoration: underline;
+}
+
+#about_intro div
+{
+    width: 100%;
+    height: 90%;
+}
+
+#about_intro section
+{
+    width: 90%;;
+}
+
+#about_intro article
+{
+    text-align: justify;
+    line-height: 150%;
+}
+
+#about_intro section h1
+{
+    font-size: 400%;
+    text-align: center;
+}
+
+#about_intro nav
+{
+    display: flex;
+    height: 10%;
+}
+
+#about_intro ul
+{
+    width: 100%;
+    font-size: 80%;
+}
+
+#about_intro ul a {
+    width: 30%;
+}
+
+#about div:first-child section
+{
+    height: 80%;
+    width: 250%;
+    opacity: 0.7;
+    margin-bottom: -50%;
+}
+
+#about div:first-child p
+{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+#about div:last-child article
+{
+    width: 95%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#vectors 
+{
+    height: auto;
+    display: block;
+}
+
+#vectors div
+{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    margin: 0 1%;
+}
+
+#vectors img
+{
+    width: 90%;
+}
+
+#vectors section
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#vectors h1
+{
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#history
+{
+    width: 100%;
+    height: auto;
+    padding-block: 30%;
+}
+
+#history div
+{
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+}
+
+#history div section
+{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+#history div section span
+{
+    font-size: 80%;
+    padding: .5% 2%;
+}
+
+#history div section h1
+{
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+#history div ~ section
+{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+#history figure
+{
+    width: 100%;
+    height: 300px;
+    margin:0 auto;
+}
+
+#history article
+{
+    width: 90%;
+    font-size: 90%;
+    margin: 0 auto;
+}
+#history article h3
+{
+    font-size: 200%;
+    text-align: center;
+}
+
+#services
+{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#services div:first-child
+{
+    height: 400px;
+    width: 100%;
+}
+
+#services div:first-child section
+{
+    text-align: center;
+}
+
+#services div:first-child section h2
+{
+    font-size: 120%;
+}
+
+#services div:last-child
+{
+    display: block;
+    height: 70%;
+}
+
+#services div:last-child section
+{
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    margin-block: 5%;
+    box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.329);
+}
+
+#services div:last-child figure
+{
+    margin: 0 auto;
+    height: 400px;
+}
+
+#services div:last-child section h4
+{
+    font-size: 120%;
+}
+
+#services div:last-child article
+{
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;;
+}
+
+#services div:last-child p
+{
+    text-align: center;
+    height: 10%;
+    padding: 4% 0;
+}
+
+#services div:last-child p span
+{
+  display: none;
+}
+
+#catchphrase
+{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+#catchphrase section
+{
+    width: 100%;
+}
+
+#catchphrase p
+{
+    width: 80%;
+    font-size: 200%;
+    margin: 0 auto;
+}
+#catchphrase button
+{
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 100%;
+    margin-block: 2% 0;
+    background-color: white;
+    color: var(--primary-color-100);
+}
+
+#link
+{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+#support
+{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+
+#support section
+{
+    height: 40%;
+    text-align: center;
+}
+
+#support section h1
+{
+    font-size: 150%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#support section article
+{
+    font-size: 100%;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+#support section button
+{
+    width: 50%;
+    height: 40%;
+}
+
+#support section span
+{
+    color: chocolate;
+}
+
+}

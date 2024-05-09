@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta http-equiv="refresh" content="5; URL=/">
  <link rel="stylesheet" href="styles/sucess.css">
  <link rel="stylesheet" href="styles/index.css">
  <link rel="stylesheet" href="styles/animation.css">
@@ -13,15 +14,29 @@
  <title>Welcome Onboard </title>
 </head>
 <body>
-  <a href="./index.html"><i class="fa-solid fa-home"></i></a>
+  <a href="/"><i class="fa-solid fa-home"></i></a>
   <div>
    <figure>
     <img src="./assets/img/SVG/sucess.svg" alt="" srcset="">
    </figure>
-   <h2>Submitted Successfully.</h2>
+   <h2>Submitted Successfully.</h2><br><small>If you're not redirected within <time>5</time> seconds click&nbsp;<a href="/">here</a></small>
   </div>
   <section class="terms">
     <p>&copy; 2024 Phil<span>Techs</span>  | &nbsp;All Rights Reserved</p>
   </section>
+
+  <script>
+    const countdown = document.getElementsByTagName('time')[0];
+    let timeleft = 5;
+    function timer() {
+      if (timeleft >= 0) {
+        setInterval(() => {
+          timeleft -= 1;
+          countdown.innerHTML = `${timeleft}`
+        }, 1000)
+      }
+    }
+    timer()
+  </script>
 </body>
 </html>
