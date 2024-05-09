@@ -54,12 +54,31 @@ window.onload = function() {
 
 const hamburger = document.querySelector('#hamburger');
 const closeButton = document.querySelector('#closeButton');
-const mobileNav = document.querySelector('.mobileViewNav')
+const mobileNav = document.querySelector('.mobileViewNav');
+
+function addSlideInAnimation() {
+  mobileNav.classList.add("slideIn");
+}
+
+function addSlideOutAnimation() {
+  mobileNav.classList.add("slideOut");
+}
+
+function removeAnimationClasses() {
+  mobileNav.classList.remove("slideIn", "slideOut");
+}
 
 hamburger.addEventListener('click', function(){
-  mobileNav.style.display='flex';
+  removeAnimationClasses();
+  addSlideInAnimation();
 });
 
 closeButton.addEventListener('click', function(){
-  mobileNav.style.display='none';
+  addSlideOutAnimation();
+  removeAnimationClasses();
 });
+
+
+
+
+

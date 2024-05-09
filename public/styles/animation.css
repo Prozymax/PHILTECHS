@@ -89,6 +89,60 @@ figure img{
  }
 }
 
+.slideIn {
+ display: flex;
+ animation: slide-in 1000ms ease;
+ animation-delay: 200ms;
+ transform: translateY(0px);
+}
+
+.slideOut {
+ animation: slide-out 1000ms ease;
+ animation-delay: 200ms;
+ transform: translateY(1000px);
+}
+
+@keyframes slide-in {
+ 0% {
+   transform: translateY(1000px);
+ }
+ 20% {
+   transform: translateY(600px);
+ }
+ 40% {
+   transform: translateY(300px);
+ }
+ 60% {
+   transform: translateY(200px);
+ }
+ 80% {
+   transform: translateY(100px);
+ }
+ 100% {
+   transform: translateY(0px);
+ }
+}
+
+@keyframes slide-out {
+ 0% {
+   transform: translateY(0px);
+ }
+ 20% {
+   transform: translateY(100px);
+ }
+ 40% {
+   transform: translateY(200px);
+ }
+ 60% {
+   transform: translateY(300px);
+ }
+ 80% {
+   transform: translateY(500px);
+ }
+ 100% {
+   transform: translateY(1000px);
+ }
+}
 
 
 
