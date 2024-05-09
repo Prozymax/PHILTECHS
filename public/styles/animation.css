@@ -38,7 +38,12 @@ figure img{
  opacity: 0;
  filter: blur(50px);
 }
-
+#about_intro h1,  article{
+ animation: fade-in 2000ms forwards ease-out;
+ animation-delay: 400ms;
+ opacity: 0;
+ filter: blur(50px);
+}
 
 @keyframes fade-in {
  0%{

@@ -17,8 +17,9 @@ a { color: inherit;text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     background-size: 100%;
-    background-color: rgba(0, 0, 0, 0.32);
+    background-color: rgba(48, 2, 53, 0.818);
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
 }
@@ -35,6 +36,8 @@ a { color: inherit;text-decoration: none; }
     font-size: 4vw;
     text-transform: capitalize;
     margin: 0;
+    font-family: Josefin Sans;
+    padding-bottom: 20px;
 }
 
 #contact_intro section article
@@ -90,7 +93,10 @@ a { color: inherit;text-decoration: none; }
     content: "";
     background-color: var(--primary-color-100);
 }
-
+#vector{
+    width: 85%;
+    margin-left: 30px;
+}
 #forms h2::after
 {
     width: 8%;
