@@ -8,7 +8,7 @@ const indexRouter = express.Router()
 app.use(bodyParser.urlencoded({ extended: true }))
 
 indexRouter.get('/enroll', (request, response) => {
-    response.sendFile(path.join(__dirname, '././public/registration.html'))
+    response.sendFile(path.join(__dirname, '../public/registration.html'))
 })
 
 indexRouter.post('/signup', (request, response) => {
