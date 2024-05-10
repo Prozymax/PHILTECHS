@@ -9,7 +9,7 @@ const indexRouter = express.Router();
 indexRouter.use(bodyParser.urlencoded({ extended: true }));
 
 // Route to serve the registration HTML page
-indexRouter.get('/enroll', (request, response) => {
+indexRouter.get('/Enroll', (request, response) => {
     response.sendFile(path.join(__dirname, '../public/registration.html'));
 });
 
