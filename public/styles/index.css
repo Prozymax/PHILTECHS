@@ -65,6 +65,7 @@ body
   justify-content: flex-end;
   align-items: flex-start;
   border-radius: 20px 20px 0px 0px;
+  position: relative;
   
 
 }
@@ -74,7 +75,10 @@ body
   text-align: center;
   font-size: 150%;
   font-weight: bold;
-  margin-top: -100px;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 20px;
+  top: 0;
 }
 .mobileViewNav ul{
   width: 100%;
