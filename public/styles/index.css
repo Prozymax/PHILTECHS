@@ -19,6 +19,18 @@ body
   user-select: none;
 }
 
+#mobileNavBackground{
+  width: 100%;
+  height:100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.564);
+  display: none;
+  transition: 2s;
+}
+
 .mobileViewNav{
 
   width: 100%;
@@ -27,7 +39,7 @@ body
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.396);
+  background-color: rgba(0, 0, 0, 0);
   display: none;
   flex-direction: column;
   align-items: center ;

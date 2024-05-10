@@ -55,6 +55,7 @@ window.onload = function() {
 const hamburger = document.querySelector('#hamburger');
 const closeButton = document.querySelector('#closeButton');
 const mobileNav = document.querySelector('.mobileViewNav');
+const background = document.querySelector('#mobileNavBackground');
 
 function addSlideInAnimation() {
   mobileNav.classList.add("slideIn");
@@ -64,19 +65,45 @@ function addSlideOutAnimation() {
   mobileNav.classList.add("slideOut");
 }
 
-function removeAnimationClasses() {
-  mobileNav.classList.remove("slideIn", "slideOut");
+function removeSlideInAnimation() {
+  setTimeout(function() {
+    mobileNav.classList.remove("slideIn");
+  }, 1000); // Adjust the delay according to your animation duration
+}
+
+function removeSlideOutAnimation() {
+  setTimeout(function() {
+    mobileNav.classList.remove("slideOut");
+  }, 1000); // Adjust the delay according to your animation duration
+}
+
+function removeBackground() {
+  background.style.display = 'none';
+}
+
+function addBackground() {
+  background.style.display = 'flex';
 }
 
 hamburger.addEventListener('click', function(){
-  removeAnimationClasses();
-  addSlideInAnimation();
+  mobileNav.classList.remove("slideIn", "slideOut");
+  setTimeout(addSlideInAnimation, 100);
+  addBackground();
 });
 
 closeButton.addEventListener('click', function(){
-  addSlideOutAnimation();
-  removeAnimationClasses();
+  removeSlideInAnimation();
+  setTimeout(addSlideOutAnimation, 50); 
+  setTimeout(removeBackground, 1000);
 });
+
+
+
+
+
+
+
+
 
 
 
