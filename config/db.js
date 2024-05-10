@@ -10,7 +10,7 @@ const pool = mysql.createPool({
     // port: 3309,
     // database: 'users',
     waitForConnections: true,
-    connectionLimit: 30,
+    connectionLimit: 50,
     queueLimit: 0
   });
   
