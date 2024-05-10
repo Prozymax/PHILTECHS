@@ -10,7 +10,7 @@ indexRouter.use(bodyParser.urlencoded({ extended: true }));
 
 // Route to serve the registration HTML page
 indexRouter.get('/enroll', (request, response) => {
-    response.sendFile(path.join(__dirname, '../public/registration.html'));
+    response.sendFile(path.join(__dirname, '.../registration.html'));
 });
 
 // Route to handle user registration
